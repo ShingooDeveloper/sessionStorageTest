@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function setSessionStorage() {
+                try {
+                    alert("ボタンがクリックされました");
+                    sessionStorage.setItem('edc_KHQ4apoBBfjJTxOZJzUs8s5Kk40yIsMQ',
+                    'U2FsdGVkX18a5EJIZotJy7ZBWeajn53X1FZi6xNxO6ciG2hDcAf66Dc6DwcxC32J0Eu/rMeHXxVpf7QLa4Lki28uqpTP3XfNxXuvbE2KijF1khU3D0Kgn3yaH5TKOONvmBWTY7eLZOvEd69uG0Zp9u6NmwiZNptLmPmT2RpHJCFQfqBAj+rhiWxEwGqISlDz')
+                    alert("sessionStorage.getItem:" + sessionStorage.getItem('edc_KHQ4apoBBfjJTxOZJzUs8s5Kk40yIsMQ'));
+                    sessionStorage.clear();
+                    alert("クリアーしました。");
+                } catch(error) {
+                    alert("error:" + error);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        sessionStorage test<br>
+        Click -><input type="button" value="button" onclick="setSessionStorage()">
+    </body>
+</html>
